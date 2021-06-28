@@ -1,0 +1,11 @@
+FALTA CALCULAR LOS TOTALES
+
+Consulta 1
+db.Ventas.find({"empleadoAtencion.sucursal.idSucursal":1,fecha:{$gt:'14::07:21'},fecha:{$lt:'18::09::21'}}).pretty
+db.Ventas.find({"empleadoAtencion.sucursal.idSucursal":2,fecha:{$gt:'14::07:21'},fecha:{$lt:'18::09::21'}}).pretty
+
+Consulta 4
+db.Ventas.find({"empleadoAtencion.sucursal.idSucursal":1,fecha:{$gt:'14::07:21'},fecha:{$lt:'18::09::21'},"productosVendidos.tipo":'Perfumeria'}).pretty
+db.Ventas.find({"empleadoAtencion.sucursal.idSucursal":1,fecha:{$gt:'14::07:21'},fecha:{$lt:'18::09::21'},"productosVendidos.tipo":'Laboratorio'}).pretty
+db.Ventas.find({"empleadoAtencion.sucursal.idSucursal":2,fecha:{$gt:'14::07:21'},fecha:{$lt:'18::09::21'},"productosVendidos.tipo":'Perfumeria'}).pretty
+db.Ventas.find({"empleadoAtencion.sucursal.idSucursal":2,fecha:{$gt:'14::07:21'},fecha:{$lt:'18::09::21'},"productosVendidos.tipo":'Laboratorio'}).pretty
